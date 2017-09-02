@@ -10,7 +10,7 @@ class Publicacion(models.Model):
     fecha_publicacion = models.DateTimeField(
             blank=True, null=True)
 
-    def publicar(self):
+    def publish(self):
         self.fecha_publicacion = timezone.now()
         self.save()
 
